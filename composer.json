@@ -1,0 +1,15 @@
+{
+    "name": "edain/socket-chat",
+    "autoload": {
+        "psr-4": {
+            "Edain\\SocketChat\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "edainsv",
+            "email": "edainsv.pro@gmail.com"
+        }
+    ],
+    "require": {}
+}
