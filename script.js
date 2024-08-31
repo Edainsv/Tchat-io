@@ -3,6 +3,9 @@ const { createServer } = require('node:http');
 const { join } = require('node:path');
 const { Server } = require('socket.io');
 
+// You can change your port here:
+const DEFAULT_PORT = 61000;
+
 const app = express();
 const server = createServer(app);
 const io = new Server(server);
@@ -18,6 +21,6 @@ io.on('connection', (socket) => {
 });
 
 
-server.listen(3000, () => {
-  console.log('server running at http://localhost:3000');
+server.listen(DEFAULT_PORT, () => {
+  console.log('server running at http://localhost:' + DEFAULT_PORT);
 });
